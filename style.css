@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  background-color: #f6fff6;
+}
+/* header navbar*/
+.navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 10px;
+  top: 0;
+  background-color: #fff;
+  padding: 5px 11px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  height: 90px;
+  z-index: 2;
+}
+.foody {
+  margin-left: 30px;
+}
+.foody__logo {
+  height: 82px;
+  width: 82px;
+}
+
+.log__sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__primary {
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn__primary:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+/* hero image and text */
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 9%;
+}
+.txt {
+  margin-left: 10%;
+  font-size: 20px;
+  color: rgba(25, 1, 112, 0.945);
+}
+.text__primary {
+  font-size: 40px;
+  color: white;
+}
+
+.hero__image__container {
+  position: relative;
+  height: 25rem;
+  width: 40rem;
+}
+
+.hero__image__container:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 25rem;
+  position: absolute;
+  width: 25rem;
+  margin-left: 200px;
+  margin-top: 25px;
+  z-index: -2;
+  border-radius: 5%;
+}
+.img__food {
+  height: 100%;
+  width: 70%;
+  margin-left: 20%;
+  border-radius: 5%;
+}
+/* youtube video section */
+.yt__video__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+.food__ad {
+  margin-top: 10%;
+}
+.video__food:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 330px;
+  position: absolute;
+  width: 430px;
+  margin-left: 27px;
+  margin-top: 67px;
+  z-index: -2;
+}
+
+#txt:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 8rem;
+  position: absolute;
+  width: 26rem;
+  margin-left: -10px;
+  margin-top: 2px;
+  z-index: -2;
+  border-radius: 5%;
+}
+/* food menu*/
+.food__list__container {
+  position: relative;
+  margin: 5rem 0;
+  padding-top: 18px;
+}
+.food__list__container__diagonal {
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+  transform: skewY(-7deg);
+  width: 100%;
+  height: 115%;
+}
+.food__menu__card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.food__menu__card {
+  flex-basis: 30%;
+  background-color: white;
+  border-radius: 6px;
+}
+.food__menu__card__image {
+  border-radius: 6px 6px 0px 0px;
+  width: 100%;
+}
+
+.food__menu__card__details {
+  padding: 1rem;
+  text-align: left;
+  color: black;
+}
+
+.food__menu__card__title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.view__more__btn {
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  margin: auto;
+  border: none;
+  height: 40px;
+  width: 60%;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.view__more__btn:hover {
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 51%, #ffffff 100%);
+  transition-duration: 0.4s;
+  width: 100%;
+  color: black;
+}
+/*retaurant image */
+.restaurant__list__text:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 12.5rem;
+  position: absolute;
+  width: 38rem;
+  margin-left: -10px;
+  margin-top: 2px;
+  z-index: -2;
+  border-radius: 5%;
+}
+.download__txt:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 8rem;
+  position: absolute;
+  width: 25rem;
+  margin-left: -10px;
+  margin-top: 2px;
+  z-index: -2;
+  border-radius: 5%;
+}
+
+.restaurant__list__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+.restaurant__list__images__container {
+  margin-top: 3rem;
+}
+
+.restaurant__list__row1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.restaurant__list__row2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.restaurant1,
+.restaurant3 {
+  border-radius: 5px;
+  margin: 0 5px;
+  width: 250px;
+  height: 150px;
+}
+
+.restaurant2,
+.restaurant4 {
+  border-radius: 5px;
+  margin: 0 5px;
+  width: 300px;
+  height: 200px;
+}
+/*got you*/
+.got__you {
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  color: white;
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+}
+/*card flips*/
+.card {
+  width: 300px;
+}
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 5rem;
+  transition: transform 2s;
+  background-image: linear-gradient(315deg, #63d471 0%, #328652 74%);
+  transform-style: preserve-3d;
+  color: white;
+  border-radius: 2rem;
+}
+.card:hover .card__content {
+  transform: rotateY(0.5turn);
+  -webkit-transform: rotateY(0.5turn);
+  -moz-transform: rotateY(0.5turn);
+  -ms-transform: rotateY(0.5turn);
+  -o-transform: rotateY(0.5turn);
+}
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 2rem;
+}
+
+.card__front {
+  transform: rotateZ(1turn);
+  transform: translateZ(100px);
+}
+.card__back {
+  background-image: linear-gradient(315deg, #69ce75 0%, #50ce7e 74%);
+  transform: rotateY(0.5turn);
+  color: white;
+  font-size: 18px;
+}
+.card__title {
+  font-size: 3rem;
+  transform: translateZ(6rem);
+}
+.card__subtitle {
+  transform: translateZ(4rem);
+}
+.card__body {
+  transform: translateZ(3rem);
+}
+.cards__flip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* update section */
+.update__txt:before {
+  content: "";
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  height: 4rem;
+  position: absolute;
+  width: 20rem;
+  margin-left: -155px;
+  margin-top: 2px;
+  z-index: -2;
+  border-radius: 5%;
+}
+.update {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.update__input {
+  height: 40px;
+  width: 290px;
+  border: 2px solid rgb(0, 206, 17);
+  background-color: rgb(218, 241, 213);
+  border-radius: 6px;
+}
+/*downloader*/
+.downloader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20%;
+  margin-top: 10%;
+}
+.download__img {
+  height: 400px;
+  width: 250px;
+  cursor: pointer;
+}
+.downloader__app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gplay,
+.apps {
+  height: 70px;
+  width: 200px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+/*footer section*/
+.footer {
+  height: 180px;
+  background-image: linear-gradient(to right, #20b351, #8cec9c);
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 20px;
+}
+.foody__foot {
+  color: white;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: 700;
+  cursor: pointer;
+}
+.list ul li {
+  list-style-type: none;
+  color: white;
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: 700;
+  margin-top: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1445px) {
+  .hero__image__container:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1195px) {
+  .hero__container {
+    margin-top: 20%;
+  }
+  .text__primary {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  .hero__image__container:before {
+    display: none;
+  }
+  #txt:before {
+    display: none;
+  }
+  .update__txt:before {
+    display: none;
+  }
+  .download__txt:before {
+    display: none;
+  }
+  .restaurant__list__text:before {
+    display: none;
+  }
+  .restaurant1,
+  .restaurant3 {
+    margin: 0 5px;
+    width: 170px;
+    height: 110px;
+  }
+
+  .restaurant2,
+  .restaurant4 {
+    margin: 0 5px;
+    width: 200px;
+    height: 150px;
+  }
+  .cards__flip {
+    flex-direction: column;
+  }
+  .card__content {
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .hero__container {
+    flex-direction: column;
+    margin-top: 35%;
+    justify-content: center;
+  }
+  .hero__image__container {
+    margin-top: 10%;
+    height: 300px;
+    width: 300px;
+  }
+  .hero__image__container:before {
+    display: none;
+  }
+  .video__food:before {
+    display: none;
+  }
+  .img__food {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+  }
+  .yt__video__container {
+    flex-direction: column;
+  }
+  .text__primary {
+    color: black;
+  }
+
+  #txt:before {
+    display: none;
+  }
+  .food__menu__card__list {
+    flex-direction: column;
+  }
+  .foody__logo {
+    height: 5rem;
+    margin-left: -20%;
+  }
+  .btn__primary {
+    height: 35px;
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .food__list__container__diagonal {
+    display: none;
+  }
+  .food__list__container {
+    margin-top: -10%;
+    width: 70%;
+    margin: auto;
+  }
+  .restaurant__list__container {
+    margin-top: 0%;
+  }
+  .update__txt:before {
+    display: none;
+  }
+  .download__txt:before {
+    display: none;
+  }
+  .restaurant__list__container {
+    flex-direction: column;
+  }
+  .restaurant__list__text:before {
+    display: none;
+  }
+  .restaurant1,
+  .restaurant3 {
+    margin: 0 5px;
+    width: 150px;
+    height: 120px;
+  }
+
+  .restaurant2,
+  .restaurant4 {
+    margin: 0 5px;
+    width: 180px;
+    height: 160px;
+  }
+  .download__img {
+    height: 270px;
+    width: 150px;
+  }
+  .gplay,
+  .apps {
+    height: 40px;
+    width: 90px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .container3 {
+    flex-direction: column;
+  }
+  .update {
+    flex-direction: column;
+  }
+  .food__ad {
+    height: 300px;
+    width: 300px;
+  }
+  .video__food:before {
+    height: 290px;
+    width: 300px;
+  }
+  .text__primary {
+    font-size: 1.5rem;
+  }
+  .txt {
+    font-size: 0.8rem;
+    margin: auto;
+  }
+  .btn__primary {
+    margin: 6px;
+    padding: 10px 15px;
+  }
+  .foody__foot {
+    font-size: 30px;
+  }
+  .list ul li {
+    font-size: 13px;
+  }
+  .cards__flip {
+    flex-direction: column;
+  }
+  .card__content {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
