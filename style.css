@@ -429,6 +429,9 @@ body {
   #txt:before {
     display: none;
   }
+  #explore {
+    color: white;
+  }
   .update__txt:before {
     display: none;
   }
