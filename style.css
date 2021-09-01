@@ -166,6 +166,11 @@ body {
   flex-basis: 30%;
   background-color: white;
   border-radius: 6px;
+  transition: 0.5s;
+}
+.food__menu__card:hover {
+  transform: scale(1.07);
+  transition: 0.4s;
 }
 .food__menu__card__image {
   border-radius: 6px 6px 0px 0px;
@@ -257,6 +262,7 @@ body {
   margin: 0 5px;
   width: 250px;
   height: 150px;
+  transition: 0.5s;
 }
 
 .restaurant2,
@@ -265,7 +271,25 @@ body {
   margin: 0 5px;
   width: 300px;
   height: 200px;
+  transition: 0.5s;
 }
+.restaurant1:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+.restaurant2:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+.restaurant3:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+.restaurant4:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
 /*got you*/
 .got__you {
   background-image: linear-gradient(to right, #20b351, #8cec9c);
@@ -388,6 +412,7 @@ body {
   margin-right: 15px;
   cursor: pointer;
 }
+
 /*footer section*/
 .footer {
   height: 180px;
@@ -469,6 +494,11 @@ body {
     margin: 1rem;
   }
 }
+@media only screen and (min-width: 900px) {
+  #explore {
+    color: white;
+  }
+}
 @media only screen and (max-width: 770px) {
   .hero__container {
     flex-direction: column;
@@ -526,6 +556,13 @@ body {
     margin-top: -10%;
     width: 70%;
     margin: auto;
+  }
+  .food__menu__card {
+    margin-bottom: 29px;
+  }
+  .food__menu__card:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
   }
   .view__more__btn:hover {
     width: 100%;
