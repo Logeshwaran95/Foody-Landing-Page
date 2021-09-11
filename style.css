@@ -684,11 +684,14 @@ body {
   .heading {
     font-size: 27px;
   }
+  .review .box__container .box h3 {
+    font-size: 90%;
+  }
   .review .box__container .box p {
-    font-size: 100%;
+    font-size: 80%;
   }
   .box {
-    height: 180px;
+    height: 140px;
   }
 
   h1 {
